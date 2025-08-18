@@ -8,7 +8,6 @@ import {useDebouncedCallback} from "use-debounce";
 export default function Search({ placeholder }: { placeholder: string }) {
 
     const searchParams = useSearchParams();
-    console.log(searchParams.get('query'));
     const pathname = usePathname();
     const { replace } = useRouter();
 
